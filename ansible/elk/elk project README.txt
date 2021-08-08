@@ -2,7 +2,7 @@
 
 _The files in this repository were used to configure the network depicted below._
 
-![] (C:\Windows\System32\scripts\diagrams\diagram2)
+![] (diagram\diagram2)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the __PLAYBOOK___ file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -96,7 +96,7 @@ The playbook implements the following tasks:
 
 - _The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance._
 
-- _![](C:\Windows\System32\scripts\ansible\docker ps.png)_
+- _![](diagrams\docker ps.png)_
 
 ##### Target Machines & Beats
 - _This ELK server is configured to monitor the following machines:_
