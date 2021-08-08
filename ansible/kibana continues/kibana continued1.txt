@@ -1,0 +1,33 @@
+# ssh barrage
+
+- _we try to sign in from my jump box via [](ssh azureusermilad@10.0.0.6) but i get permission denied because i didnot
+- _attach the container
+- _then i run this []command (for i in $(cat .bashrc); do ssh azureuser@10.0.0.7; ssh azureuser@10.0.0.8; ssh azureuser@10.0.0.5; done)
+- _to create a loop directly on the command line but it failed to log in . i looked into the log files to find the error
+- _then i run this command to try log into all virtual machines[]($ for i in $(cat .bashrc); do ssh azureuser@10.0.0.11; ssh azureuser@10.0.0.9; ssh azureuser@10.0.0.8; done)
+- _which created alot of logs on the kibana log watch
+
+## linux stress
+
+- _i installed stress application on all virtual machines via this command (sudo apt install stress)_
+- _then i try to stress the cpu via this command [](sudo stress --cpu 1)_
+- _i capture the metrics of the cpu and attached the screen shots_
+- _ i have to do ctrl c to stop_
+### wget DOS	
+- _ i run [](wget 10.0.0.8) command  to download a file from the internet the file that was created called 
+- _ <index.html>
+- _then i run wget command in a for loop to generate many requests to be viewed by kibana metrics
+- _ [](for i in $(cat .bashrc); do wget -10.0.0.7 --output-document=/dev/null ; wget 10.0.0.8 --output-document=/dev/null ; wget 10.0.0.5 --output-document=/dev/null ; done)
+- _ and i used this command to removed the created files [](rm *)<index.html>
+
+
+#### screenshots
+- _[](C:\Windows\System32\scripts\ansible\kibana continues\1)_      
+- _[](C:\Windows\System32\scripts\ansible\kibana continues\2)_           
+- _[](C:\Windows\System32\scripts\ansible\kibana continues\3)_           
+- _[](C:\Windows\System32\scripts\ansible\kibana continues\4)_           
+- _[](C:\Windows\System32\scripts\ansible\kibana continues\5)_           
+- _[](C:\Windows\System32\scripts\ansible\kibana continues\6)_           
+- _[](C:\Windows\System32\scripts\ansible\kibana continues\7)_           
+- _[](C:\Windows\System32\scripts\ansible\kibana continues\8)_           
+- _[](C:\Windows\System32\scripts\ansible\kibana continues\9)_     

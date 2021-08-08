@@ -1,0 +1,71 @@
+Cloud Access Control
+
+#
+
+- _How would you control access to a cloud network?_
+- _you can control access of the control network through choosing specific communication protocols like ssh which_
+- _uses port 22 and http with used port 80 and you can configre the way this protocols work through inbound security_
+- _to set who can contact this ip or not and who can contact this virtual machine or not and also you can use monitoring_
+- _through applications like kibana which analyse your logs to watch if there is any suspecious activity._
+- _restate proplem_
+- _we have creeated several web machines and and make them available in one availabilty zone and conected in one virtual network _
+- _group the first proplem we have was we were unable to connect to the vm through the terminal from my computer_
+- _so we have to make sure that user name and public key is set up correcrtly and no spelling errors is there and_
+- _then we have to make sure that inbound security rules is in place so we can to avoid the technical problems_
+- _so we set up ssh rule that allow our decvice can access the network.also we added rule to aloow _
+- _http access to the network. _
+## 
+
+- _in our project we used cloud security all of the vm we used the same setting of nsg which is a good benefit _
+- _of using the cloud which saves resources ._
+- _we have to configure our access control to our network by configuring the virtual network which_
+- _contains the inbound security rules which we have to configure to allow the devices we want_
+- _to access and to prevent all other devices from accessing our network._
+- _we created network security group that included inbound security rules on it that is very necessary_ 
+- _because without these rules we cannot have remote access to the vms and without these rules our network_
+- _ will be very vulnerable as well_
+- _these details are important because they are related to any security specialist who is trying to have perfect_
+- _security setup for his work_
+
+###
+
+- _we implemnted network security groups whithin virtual network also we can set up firewalls whithin the hosts_
+- _or have it implemented on the network as a hardware._
+- _we build our security groups inside our virtual networks to make sure that we have secure access to our virtual machine_
+- _also within our securiy groups we set the inbound rules like ssh and http and deny other access_
+- _these rules insure authenticaion and authrization and insure the integrity and confedintiality of our network_
+- _and the data going in and out of it. firewalls are very important to insure integrety of data to stop any suspicous packets from_
+- _accessing the network . we used inbound security rules ssh port 22 to access the vm from personal machine and also set port_
+- _80 http to access from outside and we set rule to deny all other traffic._
+- _access control achieved confedentiality and integrety and availabilty to my network and the data within it_
+- _restriction was needed to lower the vulnurability risk of letting anyone of accessing the network._
+
+####
+
+- _for web1 we allowed ssh port 22 and http from port 80 and deny all other access_
+- _for DVWA VM2 we allowed ssh port 22_
+- _for green user we allowed port 22 and 5601_
+- _we can access the jumpbox by using the start and attach the docker container command and then ssh into it_
+- _and we can access the web server from jump box by using vpn.VPN creates a direct connection between your local_
+- _network and a remote network. VPN can encrypt all network traffic between your current network or device and your remote network_
+- _Once you are connected to the VPN, you have full access to all resources on the remote network, as if you were locally connected_
+
+#####
+
+- _advanteges of vpn_
+- _protect your online identity_
+- _secure online connection_
+- _bypass geo-blocking_
+- _prevent bandwidth throttling_
+- _protect file sharing_
+- _anonymity_
+
+disadvantages of vpn_
+
+- _quality vpn is expensive_
+- _free vpn is not secure_
+- _vpn connection may drop_
+- _not built for all devices_
+
+- _the disadvantages of implementing a VPN that kept you from doing it this time is cost because when using the cloud cost is a big factor_
+- _depending on the company budget . it is appropriate to use the vpn when you try to access the company from somewhere remote from the network_
